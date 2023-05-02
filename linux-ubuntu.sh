@@ -11,6 +11,8 @@ sudo apt-get install ripgrep -y
 sudo apt-get install python3-pip -y
 sudo apt-get install curl -y
 
+sudo chown -R "${USER}" ~/.local
+
 sudo curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
