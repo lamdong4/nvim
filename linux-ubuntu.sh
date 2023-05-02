@@ -1,11 +1,11 @@
-sudo apt-get update && apt-get upgrade
+sudo apt-get update && apt-get upgrade -y
 sudo apt-get install -y git make gcc sudo curl 
 sudo apt install -y wget cmake unzip npm gettext yarn
 
 sudo sudo npm install tree-sitter-cli
 
 sudo curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
-sudo apt update && apt install -y nodejs
+sudo apt update && apt install nodejs -y 
 
 sudo apt-get install ripgrep -y
 sudo apt-get install python3-pip -y
@@ -29,7 +29,6 @@ sudo make install
 cp ./build/bin/nvim /usr/bin/
 
 # config neovim
-cd ..
 sudo mkdir -p ~/.config/nvim
 sudo cp -r nvim-linux/* ~/.config/nvim
 
